@@ -1,5 +1,5 @@
 {% set name = "pylyzer" %}
-{% set version = "0.0.76" %}
+{% set version = "0.0.77" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/mtshiba/pylyzer/archive/v{{ version }}.tar.gz
-  sha256: e6e60ddcff14ec57e13fd810f57fa105d5ce5a1795fbe58c37684d69dcf4c52d
+  sha256: 97537fdd2cdf96985f36064d19a56560289b742587462b7992fa663578ed0cbf
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
